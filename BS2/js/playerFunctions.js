@@ -235,7 +235,6 @@ BSplayer.clearQueue = function(){				//Removes all but the first videoEntry (the
 }
 BSplayer.play = function(){
 	player.playVideo();
-	 document.getElementById("player").style.display = "none";
 	if (this.currentVideo != undefined){
 		this.isPlaying = true;
 	}
