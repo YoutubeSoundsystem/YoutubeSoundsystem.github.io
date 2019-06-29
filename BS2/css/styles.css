@@ -158,7 +158,7 @@ body{
 
 #BigChannelCont{
 	overflow-y:auto;
-    height: -webkit-fill-available;
+    //height: -webkit-fill-available;
 }
 #BigQueueCont, #BigPlaylistQueueCont{
 	overflow-y:auto;
