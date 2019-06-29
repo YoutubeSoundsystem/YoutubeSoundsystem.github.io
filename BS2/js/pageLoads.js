@@ -206,7 +206,7 @@ function loadPlaylist(playlistID){
 					mine = true;
 				}
 
-				var results = JSON.parse(NX.responseText);
+				//var results = JSON.parse(NX.responseText);
 				// var r = results['red'];
 				// var g = results['green'];
 				// var b = results['blue'];
