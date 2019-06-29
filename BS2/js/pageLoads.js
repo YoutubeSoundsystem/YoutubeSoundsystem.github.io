@@ -121,7 +121,7 @@ function loadChannelList(pageToken) {
 										parent.children[1].getElementsByTagName("DIV")[0].style.color = "black";
 										parent.children[1].getElementsByTagName("DIV")[1].style.color = "rgba(0,0,0,0.5";
 									}
-								}
+// 								}
 // 							};
 // 							NX.send();
 						})(sortedResponse[x].brandingSettings.image.bannerMobileLowImageUrl, Cont, a);
