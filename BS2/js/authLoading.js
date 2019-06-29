@@ -23,7 +23,7 @@ function signOut() {
 
 var GoogleAuth;
 var user;
-var SCOPE = 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.force-ssl';
+var SCOPE = 'https://www.googleapis.com/auth/youtube';
 function handleClientLoad() {
 	gapi.load('client:auth2', initClient);
 }
