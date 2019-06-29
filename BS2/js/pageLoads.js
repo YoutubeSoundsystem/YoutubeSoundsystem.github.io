@@ -113,7 +113,8 @@ function loadChannelList(pageToken) {
 
 // 									var grad = `linear-gradient(to right, rgb(${r},${g},${b}) ${realWidth}px, rgb(${r},${g},${b},0.85) ${realWidth+80}px, rgba(${r},${g},${b},0.67) ${realWidth+180}px, #ffffff00)`;
 
-									parent.style.background = `${grad}, url(${banner}) center`;
+									//parent.style.background = `${grad}, url(${banner}) center`;
+									parent.style.background = `url(${banner}) center`;
 									parent.style.backgroundSize = 'cover';
 
 									//document.getElementsByClassName("ChannelBack")[globalIndex].style.background = `${grad}, ${a}`;
