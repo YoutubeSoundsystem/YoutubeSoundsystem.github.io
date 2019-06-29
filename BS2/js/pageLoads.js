@@ -191,10 +191,10 @@ function loadPlaylist(playlistID){
 	});
 	request.execute(function(responsePlaylist) {
 
-		var NX = new XMLHttpRequest();
-		NX.open("GET", ("uploadPic2.php?url="+responsePlaylist.items[0].snippet.thumbnails.default.url+"&num=0"), true);
-		NX.onreadystatechange = function() {
-			if (NX.readyState == 4) {
+// 		var NX = new XMLHttpRequest();
+// 		NX.open("GET", ("uploadPic2.php?url="+responsePlaylist.items[0].snippet.thumbnails.default.url+"&num=0"), true);
+// 		NX.onreadystatechange = function() {
+// 			if (NX.readyState == 4) {
 
 				var a = responsePlaylist.items[0].snippet.thumbnails.high.url;
 				//var ae = responsePlaylist.items[0].snippet.thumbnails.high.url
@@ -403,9 +403,9 @@ function loadPlaylist(playlistID){
 				document.getElementById("BigChannelCont").appendChild(playlistExclusive);
 
 				makeSongList(playlistID, undefined, ("playlistExclusive"+playlistID), mine);
-			}
-		};
-		NX.send();
+// 			}
+// 		};
+// 		NX.send();
 	});
 }
 var sideBarListen;
