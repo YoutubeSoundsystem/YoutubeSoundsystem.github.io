@@ -106,12 +106,12 @@ function loadChannelList(pageToken) {
 // 							NX.onreadystatechange = function() {
 // 								if (NX.readyState == 4) {
 									var realWidth = parent.getElementsByClassName("ChanTitleCont")[0].offsetWidth;
-									var results = JSON.parse(NX.responseText);
-									var r = results['red'];
-									var g = results['green'];
-									var b = results['blue'];
+// 									var results = JSON.parse(NX.responseText);
+// 									var r = results['red'];
+// 									var g = results['green'];
+// 									var b = results['blue'];
 
-									var grad = `linear-gradient(to right, rgb(${r},${g},${b}) ${realWidth}px, rgb(${r},${g},${b},0.85) ${realWidth+80}px, rgba(${r},${g},${b},0.67) ${realWidth+180}px, #ffffff00)`;
+// 									var grad = `linear-gradient(to right, rgb(${r},${g},${b}) ${realWidth}px, rgb(${r},${g},${b},0.85) ${realWidth+80}px, rgba(${r},${g},${b},0.67) ${realWidth+180}px, #ffffff00)`;
 
 									parent.style.background = `${grad}, url(${banner}) center`;
 									parent.style.backgroundSize = 'cover';
@@ -597,10 +597,10 @@ function makeChannelHead(channelID, callback){
 				}
 				else{
 					a = responseChannel.items[0].brandingSettings.image.bannerImageUrl;
-					var results = JSON.parse(NX.responseText)
-					r = results['red'];
-					g = results['green'];
-					b = results['blue'];
+// 					var results = JSON.parse(NX.responseText)
+// 					r = results['red'];
+// 					g = results['green'];
+// 					b = results['blue'];
 				}
 
 				var be = responseChannel.items[0].snippet.title;
@@ -784,15 +784,15 @@ var SongOptions = [
 
 				l(data);
 
-				var NX = new XMLHttpRequest();
-				NX.open("POST", "http://27raj121.ddns.net:8080/testing/", true);
-				NX.onreadystatechange = function() {
-					if (NX.readyState == 4) {
-						//func(JSON.parse(NX.responseText));
-						l("complete");
-					}
-				}
-				NX.send(JSON.stringify(data));
+// 				var NX = new XMLHttpRequest();
+// 				NX.open("POST", "http://27raj121.ddns.net:8080/testing/", true);
+// 				NX.onreadystatechange = function() {
+// 					if (NX.readyState == 4) {
+// 						//func(JSON.parse(NX.responseText));
+// 						l("complete");
+// 					}
+// 				}
+// 				NX.send(JSON.stringify(data));
 			});
 		}
 	},
