@@ -195,6 +195,8 @@ function loadPlaylist(playlistID){
 // 		NX.open("GET", ("uploadPic2.php?url="+responsePlaylist.items[0].snippet.thumbnails.default.url+"&num=0"), true);
 // 		NX.onreadystatechange = function() {
 // 			if (NX.readyState == 4) {
+		
+		console.log(responsePlaylist);
 
 				var a = responsePlaylist.items[0].snippet.thumbnails.high.url;
 				//var ae = responsePlaylist.items[0].snippet.thumbnails.high.url
