@@ -101,10 +101,10 @@ function loadChannelList(pageToken) {
 						document.getElementById("channelListExclusive").appendChild(Cont);
 
 						(function(mobileUrl, parent, banner){
-							var NX = new XMLHttpRequest();
-							NX.open("GET", ("uploadPic2.php?url="+mobileUrl+"&num=0"), true);
-							NX.onreadystatechange = function() {
-								if (NX.readyState == 4) {
+// 							var NX = new XMLHttpRequest();
+// 							NX.open("GET", ("uploadPic2.php?url="+mobileUrl+"&num=0"), true);
+// 							NX.onreadystatechange = function() {
+// 								if (NX.readyState == 4) {
 									var realWidth = parent.getElementsByClassName("ChanTitleCont")[0].offsetWidth;
 									var results = JSON.parse(NX.responseText);
 									var r = results['red'];
@@ -122,8 +122,8 @@ function loadChannelList(pageToken) {
 										parent.children[1].getElementsByTagName("DIV")[1].style.color = "rgba(0,0,0,0.5";
 									}
 								}
-							};
-							NX.send();
+// 							};
+// 							NX.send();
 						})(sortedResponse[x].brandingSettings.image.bannerMobileLowImageUrl, Cont, a);
 					}
 					document.getElementById("channelListExclusive").addEventListener("click", function(event){
@@ -579,10 +579,10 @@ function makeChannelHead(channelID, callback){
 
 		l(responseChannel);
 
-		var NX = new XMLHttpRequest();
-		NX.open("GET", ("uploadPic2.php?url="+responseChannel.items[0].brandingSettings.image.bannerMobileLowImageUrl+"&num=0"), true);
-		NX.onreadystatechange = function() {
-			if (NX.readyState == 4) {
+// 		var NX = new XMLHttpRequest();
+// 		NX.open("GET", ("uploadPic2.php?url="+responseChannel.items[0].brandingSettings.image.bannerMobileLowImageUrl+"&num=0"), true);
+// 		NX.onreadystatechange = function() {
+// 			if (NX.readyState == 4) {
 
 				var a;
 				var r;
@@ -669,8 +669,8 @@ function makeChannelHead(channelID, callback){
 
 				//makeSongList(responseChannel.items[0].contentDetails.relatedPlaylists.uploads, undefined, ("channelExclusive"+channelID));
 			}
-		};
-		NX.send();
+// 		};
+// 		NX.send();
 	});
 }
 
