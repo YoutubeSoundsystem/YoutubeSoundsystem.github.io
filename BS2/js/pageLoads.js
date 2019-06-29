@@ -668,7 +668,7 @@ function makeChannelHead(channelID, callback){
 				}
 
 				//makeSongList(responseChannel.items[0].contentDetails.relatedPlaylists.uploads, undefined, ("channelExclusive"+channelID));
-			}
+//			}
 // 		};
 // 		NX.send();
 	});
