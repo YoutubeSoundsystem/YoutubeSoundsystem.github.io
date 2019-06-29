@@ -1,0 +1,48 @@
+.slidecontainer {
+    width: 130px; /* Width of the outside container */
+    height: fit-content;
+    margin: auto 60px auto 0px;
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 6px; /* Specified height */
+    background-color: rgba(234, 49, 49, 0.25); /* Grey background */
+    outline: none; /* Remove outline */
+    //opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    margin: 0px;
+    display: block;
+}
+
+/* Mouse-over effects */
+/*.slider:hover {
+    opacity: 1;  Fully shown on mouse-over 
+}*/
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 8px; /* Set a specific slider handle width */
+    height: 18px; /* Slider handle height */
+    background-color: rgb(234, 49, 49); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    box-shadow: 0 0 20px 4px #00000017;
+}
+
+.slider::-moz-range-thumb {
+    width: 8px; /* Set a specific slider handle width */
+    height: 18px; /* Slider handle height */
+    background-color: rgb(234, 49, 49); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    box-shadow: 0 0 20px 4px #00000017;
+}
+
+.slider::-ms-fill-lower{
+    background-color: rgb(234, 49, 49);
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Youtube Soundsystem</title>
+	<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="134898753356-07emi6gffbf4iq0hkv59rdeuorvnmrff.apps.googleusercontent.com">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="/smith_hm/BS.ico"/>
+	<link rel="stylesheet" type="text/css" href="stylesRed.css">
+	<link rel="stylesheet" type="text/css" href="sliderStyles.css">
+	<script type="text/javascript" src="timeConversions.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="pageLoads.js"></script>
+	<script async defer src="https://apis.google.com/js/api.js" 
+        onload="this.onload=function(){};handleClientLoad()" 
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+	</script>
+</head>
+<body>
+	<div id="player"></div>
+	<div id="bigCont">
+
+		<div id="sidebar" class="shadow">
+			<div class="header">CHANNELS</div>
+			<div id="BigSidebarCont">
+				<div class="sidebarList">
+					<!-- <div class="sidebarEntry">
+						<div class="miniChannelImage"></div>
+						<div class="miniChannelTitle">Heyward Smith</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+		<div id="viewer" class="shadow"> 
+			<div class="menuCont shadow">
+				<div class="menu">
+					<div class="menuItem">
+						SONGS
+					</div>
+					<div class="menuItem">
+						PLAYLISTS
+					</div>
+					<div class="menuItem">
+						CHANNELS
+					</div>
+					<div class="menuItem">
+						STATIONS
+					</div>
+					<div class="menuItemButton buttonShadow">
+						LOG IN
+					</div>
+
+					<div class="accountImage">
+						
+					</div>
+
+					<!-- <div class="g-signin2" data-onsuccess="onSignIn" style="
+						display: none;
+					"></div> -->
+				</div>
+			</div>
+			<div id="BigChannelCont">
+				<!-- 
+
+				<div class="songList">
+				<div class="songEntry">
+						<span class="entryNum">1.</span>
+						<span class="entryName">Here Comes The Money</span>
+						<span class="entryDuration">5:14</span>
+					</div> 
+				</div> -->
+			</div>
+		</div>
+		<div id="queue">
+			<div class="header">
+				<span>QUEUE</span>
+			</div>
+			<div id="BigQueueCont">
+				<div class="queueList">
+				<!--<div class="queueEntry">
+						<div class="queueEntryName">
+							<span>Here Comes The Money</span>
+						</div>
+					</div>-->
+				</div>
+			</div>
+			<div class="queueButton buttonShadow">
+				<span>CLEAR</span>
+			</div>
+		</div>
+	</div>
+	<div id="playback" class="shadow">
+		<div id="playbackCont">
+			<div class="thumbPic"></div>
+			<div class="playbackSubCont">
+				<div id="playbackBar">
+						<input type="range" min="0" max="100" value="0" class="slider">
+						<input type="range" min="0" max="100" value="0" class="slider">
+				</div>
+				<div class="playbackSubSubCont">
+					<div class="playbackTextCont">
+						<div class="playbackTitle"></div>
+						<div class="playbackSubtext"></div>
+					</div>
+					<div class="playbackControls">
+						<div class="smallControl"></div>
+
+						<div class="smallControl"></div>
+						<div class="largeControl"></div>
+						<div class="smallControl"></div>
+
+						<div class="smallControl"></div>
+					</div>
+					<div class="durationCounter"></div>
+					<div class="volumeNum">50</div>
+					<div class="slidecontainer">
+						<input type="range" min="0" max="100" value="100" class="slider">
+						<input type="range" min="0" max="100" value="100" class="slider">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
