@@ -596,13 +596,13 @@ function makeChannelHead(channelID, callback){
 // 					g = 49;
 // 					b = 49;
 // 				}
-				else{
+				//else{
 					a = responseChannel.items[0].brandingSettings.image.bannerImageUrl;
 // 					var results = JSON.parse(NX.responseText)
 // 					r = results['red'];
 // 					g = results['green'];
 // 					b = results['blue'];
-				}
+				//}
 
 				var be = responseChannel.items[0].snippet.title;
 				var c = "Channel";
