@@ -590,12 +590,12 @@ function makeChannelHead(channelID, callback){
 				var g;
 				var b;
 
-				if (NX.responseText.substring(0,1) == "I"){
-					a = "http://yt3.ggpht.com/xQhp8-B774IYTnvEG4zHESE2CNHF_RokEet5Ne6G1zq1j4Xg-PT0ytalVJxmf206_O96HDtcItiaadGAZA=w1060-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no";
-					r = 234;
-					g = 49;
-					b = 49;
-				}
+// 				if (NX.responseText.substring(0,1) == "I"){
+// 					a = "http://yt3.ggpht.com/xQhp8-B774IYTnvEG4zHESE2CNHF_RokEet5Ne6G1zq1j4Xg-PT0ytalVJxmf206_O96HDtcItiaadGAZA=w1060-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no";
+// 					r = 234;
+// 					g = 49;
+// 					b = 49;
+// 				}
 				else{
 					a = responseChannel.items[0].brandingSettings.image.bannerImageUrl;
 // 					var results = JSON.parse(NX.responseText)
@@ -609,14 +609,14 @@ function makeChannelHead(channelID, callback){
 
 				
 
-				var d = "linear-gradient(to right, rgb("+r+","+g+","+b+") 200px, rgb("+r+","+g+","+b+",0.85) 340px, rgba("+r+","+g+","+b+",0.67) 430px, #ffffff00)";
+				//var d = "linear-gradient(to right, rgb("+r+","+g+","+b+") 200px, rgb("+r+","+g+","+b+",0.85) 340px, rgba("+r+","+g+","+b+",0.67) 430px, #ffffff00)";
 				var e = ""; 
 				var f = "";
 
-				if ((r+g+b) > 600){
-					e = "black";
-					f = "rgba(0,0,0,0.5)";
-				}
+// 				if ((r+g+b) > 600){
+// 					e = "black";
+// 					f = "rgba(0,0,0,0.5)";
+// 				}
 
 				var channelExclusive = document.getElementById("channelExclusive"+channelID);
 				channelExclusive.innerHTML = `
