@@ -118,10 +118,10 @@ function loadChannelList(pageToken) {
 									parent.style.backgroundSize = 'cover';
 
 									//document.getElementsByClassName("ChannelBack")[globalIndex].style.background = `${grad}, ${a}`;
-									if ((r+g+b) > 600/*r > 200 && g > 200 && b > 200*/){
-										parent.children[1].getElementsByTagName("DIV")[0].style.color = "black";
-										parent.children[1].getElementsByTagName("DIV")[1].style.color = "rgba(0,0,0,0.5";
-									}
+// 									if ((r+g+b) > 600/*r > 200 && g > 200 && b > 200*/){
+// 										parent.children[1].getElementsByTagName("DIV")[0].style.color = "black";
+// 										parent.children[1].getElementsByTagName("DIV")[1].style.color = "rgba(0,0,0,0.5";
+// 									}
 // 								}
 // 							};
 // 							NX.send();
