@@ -610,6 +610,7 @@ function makeChannelHead(channelID, callback){
 				
 
 				//var d = "linear-gradient(to right, rgb("+r+","+g+","+b+") 200px, rgb("+r+","+g+","+b+",0.85) 340px, rgba("+r+","+g+","+b+",0.67) 430px, #ffffff00)";
+				var d = "";
 				var e = ""; 
 				var f = "";
 
