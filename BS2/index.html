@@ -1,49 +1,252 @@
+    
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Heyward Smith's Portfolio</title>
+	<!-- <title>Youtube Soundsystem</title>
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="134898753356-07emi6gffbf4iq0hkv59rdeuorvnmrff.apps.googleusercontent.com">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="/smith_hm/BS.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/sliderStyles.css">
+	<script type="text/javascript" src="js/timeConversions.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/pageLoads.js"></script>
+	<script async defer src="https://apis.google.com/js/api.js" 
+        onload="this.onload=function(){};handleClientLoad()" 
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+	</script> -->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:light,regular,medium,bold">
-	<link rel="stylesheet" type="text/css" href="styles/index.css">
-	<script src="scripts/index.js"></script>
+	
+	<title>Youtube Soundsystem</title>
+	<meta name="google-signin-client_id" content="413085846802-5md181l63m17r7brm9jc5vcje0vri7uo.apps.googleusercontent.com">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="/smith_hm/BS.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/sliderStyles.css">
+
+
+
+	<script defer type="text/javascript" src="js/authLoading.js"></script>
+	
+	<script defer src="https://apis.google.com/js/api.js"
+		onload="this.onload=function(){};handleClientLoad()" 
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+	</script>
+
+	
+	<script defer src="https://www.youtube.com/iframe_api"></script>
+	<!--<script defer src="//rubaxa.github.io/Sortable/Sortable.js"></script>-->
+	<script defer src="https://cdn.jsdelivr.net/npm/sortablejs@1.6.1/Sortable.min.js"></script>
+	<script defer type="text/javascript" src="js/iframeLoader.js"></script>
+	<script defer type="text/javascript" src="js/DOMDefinitions.js"></script>
+	<script defer type="text/javascript" src="js/misc.js"></script>
+	<script defer type="text/javascript" src="js/timeConversions.js"></script>
+	<script defer type="text/javascript" src="js/playerFunctions.js"></script>
+	<script defer type="text/javascript" src="js/pageLoads.js"></script>
+	<script defer type="text/javascript" src="js/init.js"></script>
 
 </head>
 <body>
-	<div class="homePageWrapper">
-		<div class="navBar">
-			<div class="mainTitle">
-				<div id="hamburgerMenu"></div>
-				<ul>
-					<li><a class="currentPage" href="index.html">Home</a></li>
-					<li><a href="Projects.html">Projects</a></li>
-					<li><a href="About.html">About</a></li>
-					<li><a href="Contact.html">Contact Me</a></li>
-					<li><a href="https://www.linkedin.com/in/heywardsmith/" target="_blank"></a></li>
-				</ul>
-				<h1>Heyward Smith</h1>
-				<h2>Design Portfolio</h2>
+	<div id="player"></div>
+	<div id="bigCont">
+
+		<div id="sidebar" class="shadow">
+			<div class="header">
+				<span>CHANNELS</span>
+				<div class="optionsCont">
+					<li>CHANNELS</li>
+					<li>PLAYLISTS</li>
+					<li>STATIONS</li>
+				</div>
+
 			</div>
-			<ul>
-				<li><a class="currentPage" href="index.html">Home</a></li>
-				<li><a href="Projects.html">Projects</a></li>
-				<li><a href="About.html">About</a></li>
-				<li><a href="Contact.html">Contact Me</a></li>
-				<li><a href="https://www.linkedin.com/in/heywardsmith/" target="_blank"></a></li>
-			</ul>
+			<div id="BigSidebarCont">
+				<div class="sidebarList">
+					<!-- <div class="sidebarEntry">
+						<div class="miniChannelImage"></div>
+						<div class="miniChannelTitle">Heyward Smith</div>
+					</div> -->
+				</div>
+			</div>
 		</div>
-		<div class="mainBody">
-			<div class="headshot"></div>
-			<img src="assets/Headshot.jpeg">
-			<div class="intro">
-				<h3>Yo, I'm Heyward</h3>
-				<span>I’m a UI and Web designer with a degree in Industrial Design. I enjoy combining different disciplines like user-centric research methods, graphic design, and web code to make diverse and unique products.</span>			
-				<a href="Projects.html">View my Work</a>
-				<a href="About.html">More about Me</a>
+
+		<div id="viewer" class="shadow"> 
+			<div class="menuCont shadow">
+				<div class="menu">
+					<a class="menuItem" href="#/Songs">SONGS</a>
+					<a class="menuItem" href="#/Playlists">PLAYLISTS</a>
+					<a class="menuItem" href="#/Channels">CHANNELS</a>
+					<a class="menuItem" href="#/Stations">STATIONS</a>
+					<div id="searchBar">
+						<input id="searchText" placeholder="Search..." type="text">
+					</div>
+					<div class="menuItemButton buttonShadow">LOG IN</div>
+					<div class="accountImage"></div>
+				</div>
+			</div>
+			<div id="BigChannelCont">
+				<!-- <div class="searchEntry">
+					<div class="searchThumb"></div>
+					<span class="searchNum"></span>
+					<span class="searchName"></span>
+					<span class="searchDuration"></span>
+				</div> -->
+				<!-- <div class="songList">
+				<div class="songEntry">
+						<span class="entryNum">1.</span>
+						<span class="entryName">Here Comes The Money</span>
+						<span class="entryDuration">5:14</span>
+					</div> 
+				</div> -->
+			</div>
+		</div>
+		<div id="queue">
+			<div class="header">
+				<span>QUEUE</span>
+
+				<div id="clearMiniButton"></div>
+
+				<!-- <div class="queueButton buttonShadow">
+					<span>CLEAR</span>
+				</div> -->
+			</div>
+			<div id="BigQueueCont">
+				<div class="queueList">
+				<!--<div class="queueEntry">
+						<div class="queueEntryName">
+							<span>Here Comes The Money</span>
+						</div>
+					</div>-->
+				</div>
+			</div>
+
+			<div class="header">
+				<span>PLAYLIST</span>
+				<div id="shuffleMiniButton"></div>
+				<div id="loopMiniButton"></div>
+				<!-- <div id="randoButton" style="
+				    perspective: 30px;
+				    height:  30px;
+				    width: 30px;
+				    margin-left: 15px;
+				    background-size: 100%;
+				    border-radius: 50%;
+				    background-position: center;
+				    display: flex;
+				">
+					<div style="
+					    height: 17px;
+					    width: 17px;
+					    margin: auto;
+					    /* margin-left: 15px; */
+					    transform-style: preserve-3d;
+					    transform: rotateX( 0deg) translateZ(-8.5px);
+					    transition: 1s;
+					    /* background-color: #2f22a9; */
+					">
+						<div id="shuffleMiniButton" style="
+						    transform: rotateX( 0deg) translateZ(8.5px);
+						"></div>
+						<div id="shuffleMiniButton" style="
+						    transform: rotateX(-90deg) translateZ(8.5px);
+						    margin-top:  -17px;
+						"></div>
+				    </div>
+				</div> -->
+
+				<div id="clearPlaylistMiniButton"></div>
+			</div>
+			<div id="BigPlaylistQueueCont">
+				<div class="queueList">
+				<!--<div class="queueEntry">
+						<div class="queueEntryName">
+							<span>Here Comes The Money</span>
+						</div>
+					</div>-->
+				</div>
+			</div>
+			<div class="toastCont" id="toast1">
+				<div class="toastText">
+					Success!
+				</div>
+			</div>
+
+			<div class="toastCont" id="toast2">
+				<div class="toastText">
+					Success!
+				</div>
+			</div>
+
+			<div class="toastCont" id="toast3">
+				<div class="toastText">
+					Success!
+				</div>
 			</div>
 		</div>
 	</div>
+	<div class="descCont shadow">
+		<span class="descText">
+			
+		</span>
+	</div>
+	<div id="playback" class="shadow">
+		<div id="playbackCont">
+			<div class="thumbPic"></div>
+			<div class="playbackSubCont">
+				<div id="playbackBar">
+					<input type="range" min="0" max="1000" value="0" class="slider">
+					<input type="range" min="0" max="1000" value="0" class="slider">
+					<svg id="albumSVG" preserveAspectRatio="none"></svg>
+				</div> 
+				<div class="playbackSubSubCont">
+					<div class="playbackTextCont">
+						<div class="playbackTitle"></div>
+						<div class="playbackDetailsCont">
+							<div class="playbackSubtext"></div>
+							<div class="descToggle">View Description</div>
+							<div class="tracklistToggle">View Tracklist</div>
+						</div>
+					</div>
+					<div class="playbackControls">
+						<div class="smallControl"></div>
+						<div class="smallControl"></div>
+						<div class="largeControl"></div>
+						<div class="smallControl"></div>
+						<div class="smallControl"></div>
+					</div>
+					<div class="durationCounter"></div>
+					<div class="volumeNum">50</div>
+					<div class="slidecontainer">
+						<input type="range" min="0" max="100" value="100" class="slider">
+						<input type="range" min="0" max="100" value="100" class="slider">
+					</div>
+					<div class="actions">
+						<div class="outTopLeft"><!-- 
+							<li>Subscribe to Channel</li>
+							<li>Save this Playlist</li>-->
+							<li>Save to Playlist</li>
+							<li>Seed Station</li>
+							<li>Open in Youtube</li>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="dialogBack">
+		<div class="dialogBox">
+			<div class="dialogTitle"></div>
+			<div class="dialogSubTitle"></div>
+			<div class="dialogButton"></div>
+			<div class="dialogButton secondary"></div>
+		</div>
+	</div>
+
 </body>
 </html>
