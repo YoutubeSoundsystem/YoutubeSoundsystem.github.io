@@ -1,0 +1,471 @@
+body{
+	font-family: 'Heebo', sans-serif;
+	/*background-image: url("../assets/Desktop 3.17.png");*/
+	margin: 0px;
+	height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.homePageWrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px){
+	body .homePageWrapper{
+		overflow-x: hidden;
+		overflow-y: scroll; 
+	}
+
+	body .navBar .mainTitle h1 {
+		margin: 0px 0px 0px 0px;
+	}
+	body .navBar #hamburgerMenu{
+		display: block;
+		width: 50px;
+		height: 40%;
+		margin: 0px 10px 0px 10px;
+	}
+	body .navBar .mainTitle ul{
+		position: absolute;
+	    top: 20px;
+	    flex-direction: column;
+	    background-color: white;
+	    z-index: 1;
+	    height: fit-content;
+	    left: 20px;
+	    box-shadow: 0px 3px 15px 0px #0000001a;
+	    display: none;
+	}
+	body .navBar ul{
+		display: none;
+	}
+	body .navBar ul li:last-child a{
+		background-image: none;
+	}
+	body .navBar ul li:last-child a::after{
+		content: "LinkedIn";
+		color: blue;
+	}
+
+	
+
+	body .homePageWrapper .mainBody{
+		flex-direction: column;
+		height: auto;
+	}
+	body .homePageWrapper .headshot{
+		width: 100%;
+		height: 240px;
+	}
+	body .homePageWrapper .intro{
+		padding-top: 60px;
+	}
+
+	body .projectsPageWrapper .largeProj, body .projectsPageWrapper .mediumProj, body .projectsPageWrapper .smallProj{
+		width: 100%;
+	}
+	body .projectsPageWrapper .row{
+		flex-direction: column;
+	}
+	body .projectWrapper .beautyHeader .header{
+	    font-size: 200%;
+	}
+	body .projectWrapper .beautyHeader .projDate{
+	    font-size: 100%;
+	}
+	body .projectWrapper .beautyHeader .backProjects{
+		display: none;
+	}
+	body .projectWrapper .photo{
+		padding: 0;
+	}
+
+	body .aboutPageWrapper .row{
+		flex-direction: column;
+	}
+	body .aboutPageWrapper .blurb{
+		margin-bottom: 5%;
+	}
+}
+
+.navBar{
+	height: 75px;
+	box-shadow: 0px 3px 15px 0px #0000001a;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	z-index: 99;
+	position: fixed;
+	top: 0px;
+    background-color: white;
+    width: 100%;
+}
+.navBar ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	height: 100%;
+    float: right;
+    margin-right: 22px;
+
+    flex-grow: 1;
+}
+.navBar li{
+	display: block;
+	margin: auto 8px;
+}
+.navBar li a{
+    color: rgb(116,116,116);
+    background-color: #ffffff00;
+    padding: 13px 20px;
+    display: block;
+}
+.navBar ul li:last-child a{
+	background-image: url(../assets/LinkedInBox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.navBar .currentPage{
+    color: rgb(255,150,0);
+    background-color: white;
+}
+.navBar h1{
+	font-size: 29px;
+	font-weight: 500;
+    margin: 0px 0px 0px 67px;
+    white-space: nowrap;
+}
+.navBar h2{
+	font-size: 14px;
+    font-weight: 100;
+    color: #aaaaaa;
+    margin: 0px 0px 0px 28px;
+}
+.navBar .mainTitle{
+	display: flex;
+    float: left;
+    align-items: center;
+    height: 100%;
+}
+.navBar #hamburgerMenu{
+	display: none;
+	background-image: url(../assets/MenuButton.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.navBar .mainTitle ul{
+	display: none;
+}
+.mainBody{
+	padding-top: 75px;
+}
+
+
+
+
+a{
+	text-decoration: none;
+	color: rgb(255,150,0);
+}
+a:hover{
+	cursor: pointer;
+}
+.homePageWrapper h3{
+	font-size: 3em;
+    font-weight: 500;
+    margin: 0px;
+}
+.homePageWrapper span{
+    font-size: 17px;
+    color: rgb(97, 97, 97);
+    display: block;
+}
+.homePageWrapper .intro span{
+    margin-top: 60px;
+}
+
+.homePageWrapper .mainBody{
+	display: flex;
+	height: 100%;
+	position: relative;
+}
+
+.homePageWrapper .headshot{
+    width: 43%;
+    height: 100%;
+    /*background-image: url('../assets/Headshot.jpeg');*/
+    background-color: black;
+    background-size: 100%;
+}
+.homePageWrapper img{
+	display: none;
+}
+.homePageWrapper .intro{
+	width: 57%;
+	padding: 142px 91px 50px 91px;
+}
+.homePageWrapper .intro a{
+    color: rgb(255,150,0);
+    font-weight: 500;
+    font-size: 18px;
+    margin: 40px 85px 0px 0px;
+    display: inline-block;
+}
+
+.projectsPageWrapper .gridWrapper{
+	display: grid;
+	grid-gap: 0px;
+    //grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
+    grid-auto-flow: row;
+}
+
+.projectsPageWrapper .row{
+	display: flex;
+	height: 50vh;
+}
+
+.projectsPageWrapper .largeProj, .projectsPageWrapper .mediumProj, .projectsPageWrapper .smallProj{
+	position: relative;
+	cursor: pointer;
+	height: 100%;
+}
+
+.projectsPageWrapper .largeProj{
+	width: 100%;
+}
+.projectsPageWrapper .mediumProj{
+	width: 66.6%;
+}
+.projectsPageWrapper .smallProj{
+	width: 33.3%;
+}
+.projectsPageWrapper .projImage, .projectsPageWrapper .projTitles{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}
+.projectsPageWrapper .projTitles{
+	z-index: 1;
+}
+.projectsPageWrapper .mediumProj:hover .projTitles, .projectsPageWrapper .smallProj:hover .projTitles{
+    background-color: rgba(255, 150, 0, 0.77);
+}
+.projectsPageWrapper .projImage{
+    object-fit: cover;
+    z-index: 0;
+}
+
+.projectsPageWrapper .mediumProj .projTitles h1{
+	visibility: visible;
+	color: white;
+    width: max-content;
+	position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-weight: 500;
+    margin: 0px 0px 2vh 5vw;
+    font-size: 2.4em;
+}
+
+.projectsPageWrapper .mediumProj .projTitles h1{
+    top: 0px;
+    margin: 3vh 0px 0px 3vw;
+}
+
+.projectsPageWrapper .mediumProj .projTitles h2{
+	visibility: visible;
+	color: white;
+    width: max-content;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 0px 6vw 3vh 0px;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.projectsPageWrapper .smallProj .projTitles h1{
+	visibility: visible;
+    color: white;
+    width: max-content;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 500;
+    margin: 3vh 0px 0px 3vw;
+    font-size: 2.4em;
+}
+.projectsPageWrapper .smallProj .projTitles h2{
+	visibility: visible;
+	color: white;
+    width: max-content;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 0px 6vw 3vh 0px;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.projectsPageWrapper .mediumProj .projTitles h1, .projectsPageWrapper .mediumProj .projTitles h2, .projectsPageWrapper .smallProj .projTitles h1, .projectsPageWrapper .smallProj .projTitles h2{
+	visibility: hidden;
+}
+.projectsPageWrapper .mediumProj:hover .projTitles h1, .projectsPageWrapper .mediumProj:hover .projTitles h2, .projectsPageWrapper .smallProj:hover .projTitles h1, .projectsPageWrapper .smallProj:hover .projTitles h2{
+	visibility: visible;
+}
+
+
+.projectWrapper .mainBody{
+	padding-top: 75px;
+    height: 100vh;
+    box-sizing: border-box;
+    margin-top: 0px;
+}
+.projectWrapper .beautyHeader{
+	width: 100vw;
+	height: 100%;
+	position: relative;
+	margin-bottom: 7%;
+}
+.projectWrapper .beautyHeader .header{
+    color: white;
+    width: max-content;
+    position: absolute;
+    bottom: 10%;
+    left: 0px;
+    font-weight: 500;
+    margin: 3vh 0px 0px 3vw;
+    font-size: 3.4em;
+    z-index: 1;
+}
+.projectWrapper .beautyHeader h1{
+	margin: 0px;
+}
+.projectWrapper .beautyHeader .headerImage{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+	object-fit: cover;
+    z-index: 0;
+}
+.projectWrapper mark{
+	background-color: rgb(255,150,0);
+    color: inherit;
+    line-height: 93%;
+    display: table;
+    padding: 0.1em 0.3em 0em 0.3em;
+    margin-bottom: 0.1em;
+}
+.projectWrapper .accent{
+	width: 0.8em;
+	height: 0.15em;
+	background-color: rgb(255,150,0);
+}
+.projectWrapper .projDate{
+	color: rgb(97, 97, 97);
+    z-index: 1;
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.projectWrapper .blurb{
+	padding: 0 20%;
+	margin: 5% 0;
+}
+.projectWrapper .blurb h2{
+	font-weight: 500;
+	font-size: 1.5em;
+}
+.projectWrapper .blurb span{
+	font-size: 17px;
+    color: rgb(97, 97, 97);
+}
+.projectWrapper .photo{
+	padding: 0 10%;
+	margin: 5% 0;
+}
+.projectWrapper .photo img{
+	width: 100%;
+}
+.projectWrapper .backProjects{
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    font-weight: 500;
+}
+.projectWrapper .backProjects a{
+	color: rgb(97, 97, 97);
+}
+.projectWrapper .backProjects::before{
+	height: 20px;
+    width: 20px;
+    display: inline-block;
+    content: "";
+    background-image: url(../assets/BackButton.svg);
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+    vertical-align: text-top;
+}
+
+.aboutPageWrapper h3{
+	font-size: 3em;
+    font-weight: 500;
+    width: max-content;
+    margin: 4% auto;
+}
+.aboutPageWrapper .row{
+	display: flex;
+    margin: 4% 10%;
+}
+.aboutPageWrapper .blurb{
+    margin: auto 0% auto 0%;
+    width: 100%;
+}
+.aboutPageWrapper .row .blurb:first-child, .aboutPageWrapper .row .photo:first-child{
+	margin-right: 5%;
+}
+.aboutPageWrapper .blurb span{
+	font-size: 1em;
+    color: rgb(97, 97, 97);
+    line-height: 1.8em;
+    display: block;
+}
+.aboutPageWrapper .blurb h2{
+	font-weight: 500;
+	font-size: 1.8em;
+	background-color: rgb(255,150,0);
+    line-height: 119%;
+    display: table;
+    padding: 0.1em 0.3em 0em 0.3em;
+    color: white;
+
+    margin: 0 0 5% 0;
+}
+.aboutPageWrapper .photo{
+	width: 100%;
+}
+.aboutPageWrapper .photo img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
