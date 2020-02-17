@@ -90,7 +90,7 @@ function updateSigninStatus(isSignedIn) {
 		SignedIn = true;
 		document.getElementsByClassName("menuItemButton")[0].style.display = "none";
 		DOM.Topbar.AccountImage.style.display = "block";	
-		DOM.Topbar.AccountImage.style.backgroundImage = "url("+user.getBasicProfile().Qt.UK")";
+		DOM.Topbar.AccountImage.style.backgroundImage = "url("+user.Qt.UK")";
 
 		if (PlayerIn == true){
 			startHashHandling();
