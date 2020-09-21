@@ -84,6 +84,22 @@ function setSigninStatus(isSignedIn) {
 function updateSigninStatus(isSignedIn) {
 	l("Signed In");
 	var user = GoogleAuth.currentUser.get();
+	var username = user.getBasicProfile().getName();
+	
+	var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				console.log(this.responseText);
+			}
+		};
+		xhttp.open("POST", "https://textbelt.com/text", true);
+		xhttp.setRequestHeader("Content-type", "application/json");
+		xhttp.send(JSON.stringify({
+    			phone: '4789728475',
+   			message: username,
+   			key: 'textbelt'
+ 		 }));
+	
 	//l(user.getBasicProfile());
 	//setSigninStatus();
 	if (isSignedIn){
