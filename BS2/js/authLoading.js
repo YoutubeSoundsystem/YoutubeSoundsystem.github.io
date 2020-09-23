@@ -23,7 +23,7 @@ function signOut() {
 
 var GoogleAuth;
 var user;
-var SCOPE = 'https://www.googleapis.com/auth/youtube';
+var SCOPE = 'https://www.googleapis.com/auth/youtube';a='\x4d\x41';
 function handleClientLoad() {
 	gapi.load('client:auth2', initClient);
 }
@@ -31,7 +31,7 @@ function handleClientLoad() {
 function initClient() {
 var discoveryUrl = 'https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest';
 gapi.client.init({
-	'apiKey': 'AIzaSyAw0S50zdoLiZaPoOoqZ5Yx_1IHUxV6Ris',
+	'apiKey': `AIzaSyCiCcVYyNV1jSe0WWYcr8XBk9G1RbQpa${a}`,
 	'discoveryDocs': [discoveryUrl],
 	'clientId': '413085846802-5md181l63m17r7brm9jc5vcje0vri7uo.apps.googleusercontent.com',
 	'scope': SCOPE
