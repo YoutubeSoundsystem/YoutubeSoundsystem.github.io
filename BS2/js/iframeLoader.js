@@ -24,7 +24,7 @@ function onYouTubeIframeAPIReady() {
 	// 	startHashHandling();
 	// }
 	window.addEventListener("load", function(event) {
-		player.unMute(); 
+		//player.unMute(); 
 		// window.frames[0].document.getElementsByClassName("ytp-large-play-button")[0].remove();
 		// window.frames[0].document.getElementsByClassName("ytp-watermark")[0].remove();
 	});
@@ -35,6 +35,7 @@ function onPlayerReady(event){			//Event Listender for when a video is finished 
 	if (SignedIn == true){
 		startHashHandling();
 	}
+	player.unMute(); 
 }
 
 function onPlayerError(event){
