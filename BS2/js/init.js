@@ -482,7 +482,7 @@ DOM.Queue.PlayList.addEventListener("click", function(event){
 // }
 
 function loadQueue(){
-	if (JSON.Parse(window.localStorage.getItem('queue'))[0] != null){
+	if (JSON.parse(window.localStorage.getItem('queue'))[0] != null){
 		let LSQ = JSON.parse(window.localStorage.getItem('queue'));
 		let LSPQ = JSON.parse(window.localStorage.getItem('pqueue'));
 		let PQI = JSON.parse(window.localStorage.getItem('pindex'));
