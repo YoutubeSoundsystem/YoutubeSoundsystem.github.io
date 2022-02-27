@@ -33,7 +33,7 @@ var discoveryUrl = 'https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest
 gapi.client.init({
 	'apiKey': `AIzaSyCiCcVYyNV1jSe0WWYcr8XBk9G1RbQpa${a}`,
 	'discoveryDocs': [discoveryUrl],
-	'clientId': '413085846802-5md181l63m17r7brm9jc5vcje0vri7uo.apps.googleusercontent.com',
+	'clientId': '413085846802-hm9b0daer3tdbrqu2620qsb4d2l4qs6d.apps.googleusercontent.com',
 	'scope': SCOPE
 }).then(function () {
 	GoogleAuth = gapi.auth2.getAuthInstance();
