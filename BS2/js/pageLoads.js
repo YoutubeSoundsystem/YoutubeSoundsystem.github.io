@@ -86,7 +86,7 @@ function loadChannelList(pageToken) {
 						Cont.dataset.id = sortedResponse[x].id;
 
 						Cont.innerHTML = `
-								<div class="ChannelImg" style="background-image: url('${b}');">
+								<div class="ChannelImg" style="background-image: url('${a}');">
 								</div>
 								<div class="ChanTitleCont">
 									<div>${c}</div>
