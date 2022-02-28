@@ -67,12 +67,12 @@ function loadChannelList(pageToken) {
 						}
 					}
 					for (x in sortedResponse){
-						var a = sortedResponse[x].brandingSettings.image.bannerImageUrl;
+						var a = sortedResponse[x].brandingSettings.image.bannerExternalUrl;
 						var b = sortedResponse[x].snippet.thumbnails.default.url;
 						var c = sortedResponse[x].snippet.title;
 						var d = "123 videos";
 						var e;
-						if (sortedResponse[x].brandingSettings.image.bannerMobileLowImageUrl == undefined){
+						if (sortedResponse[x].brandingSettings.image.bannerExternalUrl == undefined){
 							a = "http://yt3.ggpht.com/xQhp8-B774IYTnvEG4zHESE2CNHF_RokEet5Ne6G1zq1j4Xg-PT0ytalVJxmf206_O96HDtcItiaadGAZA=w1060-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no";
 							e = a;
 						}
@@ -86,7 +86,7 @@ function loadChannelList(pageToken) {
 						Cont.dataset.id = sortedResponse[x].id;
 
 						Cont.innerHTML = `
-								<div class="ChannelImg" style="background-image: url('${a}');">
+								<div class="ChannelImg" style="background-image: url('${b}');">
 								</div>
 								<div class="ChanTitleCont">
 									<div>${c}</div>
