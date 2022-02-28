@@ -93,10 +93,10 @@ function loadChannelList(pageToken) {
 									<div>${d}</div>
 								</div>
 						`;
-						// (function(id){Cont.addEventListener("click", function(){
-						// 	l("Clicked");
-						// 	window.location.hash = ('/ChannelList' + id);
-						// });})(sortedResponse[x].id);
+						 (function(id){Cont.addEventListener("click", function(){
+						 	l("Clicked");
+						 	window.location.hash = ('/ChannelList' + id);
+						 });})(sortedResponse[x].id);
 
 						document.getElementById("channelListExclusive").appendChild(Cont);
 
