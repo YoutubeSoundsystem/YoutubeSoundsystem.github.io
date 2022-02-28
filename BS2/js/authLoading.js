@@ -31,7 +31,7 @@ function handleClientLoad() {
 function initClient() {
 var discoveryUrl = 'https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest';
 gapi.client.init({
-	'apiKey': `AIzaSyCiCcVYyNV1jSe0WWYcr8XBk9G1RbQpa${a}`,
+	'apiKey': `AIzaSyCiCcVYyNV1jSe0WWYcr8XBk9G1RbQpaMA`,//${a}`,
 	'discoveryDocs': [discoveryUrl],
 	'clientId': '413085846802-hm9b0daer3tdbrqu2620qsb4d2l4qs6d.apps.googleusercontent.com',
 	'scope': SCOPE
