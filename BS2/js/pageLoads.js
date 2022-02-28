@@ -597,7 +597,7 @@ function makeChannelHead(channelID, callback){
 // 					b = 49;
 // 				}
 				//else{
-					a = responseChannel.items[0].brandingSettings.image.bannerImageUrl;
+					a = responseChannel.items[0].brandingSettings.image.bannerExternalUrl;
 // 					var results = JSON.parse(NX.responseText)
 // 					r = results['red'];
 // 					g = results['green'];
