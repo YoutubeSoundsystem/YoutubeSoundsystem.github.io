@@ -205,7 +205,7 @@ function loadPlaylist(playlistID){
 				var c = responsePlaylist.items[0].contentDetails.itemCount+" videos";
 				var ce = responsePlaylist.items[0].id;
 				var mine = false
-				if (user.rt.TJ == responsePlaylist.items[0].snippet.channelTitle) {
+				if (user.Du.tf == responsePlaylist.items[0].snippet.channelTitle) {
 					mine = true;
 				}
 
