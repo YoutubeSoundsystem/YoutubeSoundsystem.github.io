@@ -106,7 +106,7 @@ function updateSigninStatus(isSignedIn) {
 		SignedIn = true;
 		document.getElementsByClassName("menuItemButton")[0].style.display = "none";
 		DOM.Topbar.AccountImage.style.display = "block";	
-		DOM.Topbar.AccountImage.style.backgroundImage = "url("+user.Ru.IN+")";
+		DOM.Topbar.AccountImage.style.backgroundImage = "url("+user.Lu.rN+")";
 
 		if (PlayerIn == true){
 			startHashHandling();
