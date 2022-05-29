@@ -23,6 +23,7 @@ function signOut() {
 
 var GoogleAuth;
 var user;
+var profile;
 var SCOPE = 'https://www.googleapis.com/auth/youtube';a='\x4d\x41';
 function handleClientLoad() {
 	gapi.load('client:auth2', initClient);
@@ -73,7 +74,7 @@ function revokeAccess() {
 }
 function setSigninStatus(isSignedIn) {
 	var user = GoogleAuth.currentUser.get();
-	var userPic = user.getBasicProfile().getImageUrl();
+	var profile = user.getBasicProfile();
 	var isAuthorized = user.hasGrantedScopes(SCOPE);
 	if (isAuthorized) {
 
@@ -107,7 +108,7 @@ function updateSigninStatus(isSignedIn) {
 		SignedIn = true;
 		document.getElementsByClassName("menuItemButton")[0].style.display = "none";
 		DOM.Topbar.AccountImage.style.display = "block";	
-		DOM.Topbar.AccountImage.style.backgroundImage = "url("+userPic+")";
+		DOM.Topbar.AccountImage.style.backgroundImage = "url("+profile.getImageUrl()+")";
 
 		if (PlayerIn == true){
 			startHashHandling();
