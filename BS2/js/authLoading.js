@@ -74,7 +74,6 @@ function revokeAccess() {
 }
 function setSigninStatus(isSignedIn) {
 	var user = GoogleAuth.currentUser.get();
-	var profile = user.getBasicProfile();
 	var isAuthorized = user.hasGrantedScopes(SCOPE);
 	if (isAuthorized) {
 
@@ -108,7 +107,7 @@ function updateSigninStatus(isSignedIn) {
 		SignedIn = true;
 		document.getElementsByClassName("menuItemButton")[0].style.display = "none";
 		DOM.Topbar.AccountImage.style.display = "block";	
-		DOM.Topbar.AccountImage.style.backgroundImage = "url("+profile.getImageUrl()+")";
+		DOM.Topbar.AccountImage.style.backgroundImage = "url("+user.getBasicProfile().getImageUrl()+")";
 
 		if (PlayerIn == true){
 			startHashHandling();
