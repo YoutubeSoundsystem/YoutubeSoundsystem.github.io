@@ -85,7 +85,7 @@ function updateSigninStatus(isSignedIn) {
 	l("Signed In");
 	var user = GoogleAuth.currentUser.get();
 	var username = user.getBasicProfile().getName();
-	
+	/*
 	var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
@@ -99,14 +99,14 @@ function updateSigninStatus(isSignedIn) {
    			message: username,
    			key: 'textbelt'
  		 }));
-	
+	*/
 	//l(user.getBasicProfile());
 	//setSigninStatus();
 	if (isSignedIn){
 		SignedIn = true;
 		document.getElementsByClassName("menuItemButton")[0].style.display = "none";
 		DOM.Topbar.AccountImage.style.display = "block";	
-		DOM.Topbar.AccountImage.style.backgroundImage = "url("+user.Lu.rN+")";
+		DOM.Topbar.AccountImage.style.backgroundImage = "url("+user.Ru.IN+")";
 
 		if (PlayerIn == true){
 			startHashHandling();
