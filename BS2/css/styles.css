@@ -415,7 +415,7 @@ body{
 	//align-items: center;
 }
 .thumbPic{
-	height: -webkit-fill-available;
+	height: auto;
 	width: 160px;
 	min-width: 160px;
 	//background-image: url('https://i.ytimg.com/vi/KT6bO8hq-04/mqdefault.jpg');
